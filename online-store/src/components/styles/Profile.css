@@ -1,0 +1,38 @@
+.profile-page {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.profile-welcome {
+  text-align: center;
+  margin-top: 5%;
+}
+
+.profile-welcome p {
+  font-size: 32px;
+  font-weight: bold;
+  color: #bf54bf;
+}
+
+.profile-welcome .username {
+  color: #bf54bf;
+}
+
+.logout-button {
+  padding: 10px 20px;
+  color: white;
+  background-color: #bf54bf;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.profile-login {
+  text-align: center;
+}

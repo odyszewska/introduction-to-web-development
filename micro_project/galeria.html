@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Pierogi - galeria</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <style>
+            .galeria {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+            }
+            video{
+                border:solid rgb(203, 100, 100);
+                border-width: 3px;
+            }
+            .galeria img {
+                transition: transform 0.3s ease;
+                cursor: pointer;
+            }
+            .galeria img.zoomed {
+                transform: scale(1.5);
+            }
+            
+        </style>
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="index.html">Strona główna</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+            </ul>
+        </nav>
+        <main>
+            <div class="flex-container">
+                <div style="text-align: center;padding: 20px;">
+                    <p style=" font-size: 130%;">Galeria zdjęć</p>
+                </div>
+                <div class="galeria">
+                    <img src="pierogi_galeria_1.jpg" alt="Pierogi">
+                    <img src="pierogi_galeria_2.jpg" alt="Pierogi">
+                    <img src="pierogi_galeria_3.jpg" alt="Pierogi">
+                    <img src="pierogi_galeria_4.jpg" alt="Pierogi">
+                    <img src="pierogi_galeria_5.jpg" alt="Pierogi">
+                    <img src="pierogi_galeria_6.jpg" alt="Pierogi">
+                    <img src="pierogi_galeria_7.jpg" alt="Pierogi">
+                    <img src="pierogi_galeria_8.jpg" alt="Pierogi">
+                    <img src="pierogi_galeria_9.jpg" alt="Pierogi">
+                </div>
+                <div style="text-align: center; padding: 20px;">
+                    <p>Film</p>
+                    <video controls muted style="width: 100%; max-width: 500px; height: auto; border-radius: 8px;">
+                        <source src="pierogi.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </main>
+        <footer>
+            Oliwia Dyszewska
+        </footer>
+        <script src="galeria.js"></script>
+    </body>
+</html>

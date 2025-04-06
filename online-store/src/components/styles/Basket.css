@@ -1,0 +1,104 @@
+.basket-page {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  margin-top: 5%;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.basket-page h1 {
+  font-size: 28px;
+  color: #333;
+  text-align: center;
+}
+
+.empty-basket {
+  text-align: center;
+  font-size: 18px;
+  color: #888;
+}
+
+.basket-content {
+  margin-top: 20px;
+}
+
+.basket-items {
+  list-style: none;
+  padding: 0;
+}
+
+.basket-item {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.basket-item-image {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin-right: 20px;
+}
+
+.basket-item-details {
+  flex: 1;
+}
+
+.basket-item-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.basket-item-price {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.basket-item-quantity {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.basket-item-quantity button {
+  padding: 5px 10px;
+  background-color: #bf54bf;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.basket-item-quantity input {
+  width: 50px;
+  text-align: center;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.remove-item-button {
+  padding: 5px 10px;
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.checkout-button {
+  display: block;
+  margin: 20px auto 0;
+  padding: 10px 20px;
+  background-color: #bf54bf;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}

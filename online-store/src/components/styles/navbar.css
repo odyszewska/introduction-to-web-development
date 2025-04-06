@@ -1,0 +1,114 @@
+/* Basic styling for the navbar */
+nav {
+  background-color: #800080;
+  padding: 5px 15px; /* Smaller padding for a more compact navbar */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Arial", sans-serif;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  box-sizing: border-box; /* Ensures padding doesn't overflow */
+}
+
+/* Style the navigation links */
+nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  overflow: hidden; /* Prevents overflowing */
+  flex-wrap: wrap; /* Ensures the navbar wraps on small screens */
+}
+
+/* Style individual list items */
+nav ul li {
+  margin: 0 8px; /* Further reduce margin for more compact spacing */
+}
+
+/* Style the links */
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px; /* Smaller font size for a more compact look */
+  transition: all 0.3s ease;
+  display: block;
+  white-space: nowrap; /* Prevents text from wrapping */
+  padding: 4px 8px; /* Reduced padding for smaller navbar */
+}
+
+/* Add a hover effect on the links */
+nav ul li a:hover {
+  color: plum; /* Change color on hover */
+  text-decoration: none;
+}
+
+/* Logo styling (optional) */
+nav .logo {
+  color: white;
+  font-size: 16px; /* Reduced logo size */
+  font-weight: bold;
+}
+
+/* Mobile responsive navbar */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start;
+    padding: 5px 8px; /* Adjust padding for smaller screens */
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 80%; /* Even smaller width */
+    margin: 0 auto; /* Center the navbar */
+    padding: 5px 0; /* Reduced padding */
+  }
+
+  nav ul li {
+    margin: 3px 0; /* Further reduce margin on mobile */
+  }
+
+  nav ul li a {
+    font-size: 12px; /* Further reduce font size */
+    padding: 6px 10px; /* Slightly smaller padding */
+    text-align: left; /* Align text to the left on smaller screens */
+  }
+
+  /* Ensure logo is aligned on mobile */
+  nav .logo {
+    font-size: 14px; /* Further reduce logo size */
+    margin-bottom: 8px;
+  }
+}
+
+/* Further styling for extra small screens (e.g., phones in portrait mode) */
+@media (max-width: 480px) {
+  nav {
+    padding: 3px 6px; /* Smaller padding for very small screens */
+  }
+
+  nav ul li a {
+    font-size: 10px; /* Even smaller font size for tiny screens */
+    padding: 4px 8px; /* Adjust padding */
+  }
+
+  nav .logo {
+    font-size: 12px; /* Smallest logo size */
+  }
+}
+
+
+body {
+  overflow: scroll; /* Umożliwia przewijanie */
+  -ms-overflow-style: none; /* Ukrywa pasek w IE i Edge */
+  scrollbar-width: none; /* Ukrywa pasek w Firefox */
+}
+
+::-webkit-scrollbar {
+  display: none; /* Dla przeglądarek opartych na WebKit */
+}

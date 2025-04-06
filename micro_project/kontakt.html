@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Pierogi - kontakt</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="index.html">Strona główna</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+            </ul>
+        </nav>
+        <main>
+            <div class="flex-container" style="text-align: center;">
+                <div style="padding: 20px;">
+                    <p style="font-size: 130%;">Formularz kontaktowy</p>
+                </div>
+                <div>
+                    <form style="line-height: 1.5;">
+                        <label for="email">E-mail</label><br>
+                        <input type="email" id="email" name="email" placeholder="Wprowadź swój adres E-Mail" oninvalid="this.setCustomValidity('Proszę wprowadzić poprawny adres e-mail.')" oninput="this.setCustomValidity('')" required><br>
+                        <label for="temat">Temat wiadomości</label><br>
+                        <select id="temat" name="temat" oninvalid="this.setCustomValidity('Proszę wybrać temat wiadomości.')" oninput="this.setCustomValidity('')" required>
+                            <option value="" disabled selected>Wybierz temat wiadomości</option>
+                            <option value="Pytanie">Pytanie</option>
+                            <option value="Sugestia">Sugestia</option>
+                            <option value="Skarga">Skarga</option>
+                        </select><br>
+                        <label for="wiadomosc">Wiadomość</label><br>
+                        <textarea id="wiadomosc" name="wiadomosc" placeholder="Napisz swoją wiadomość" style="resize: none;height: 150px;" oninvalid="this.setCustomValidity('Proszę wprowadzić treść wiadomości.')" oninput="this.setCustomValidity('')" required></textarea><br>
+                        <input type="submit" value="Wyślij">
+                    </form>
+                </div>
+            </div>
+        </main>
+        <footer>
+            Oliwia Dyszewska
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,87 @@
+.register-page {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: white;
+}
+
+.register-container {
+  text-align: center;
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(191, 84, 191, 1);
+  width: 320px;
+}
+
+.register-title {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #bf54bf;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+}
+
+.input-group {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-group input {
+  width: calc(100% - 20px);
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  display: block;
+  margin: auto;
+}
+
+.register-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #bf54bf;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.login-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #bf54bf;
+  background-color: #f7cdf7;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.confirm-password-group {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.confirm-password-group input {
+  width: calc(100% - 20px);
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  display: block;
+  margin: auto;
+}
